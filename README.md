@@ -9,12 +9,12 @@ Convertisseur de fichiers en français, statique et compatible avec GitHub Pages
 ## Fonctionnalités
 
 - Glisser-déposer, sélection multiple et file de conversion (20 fichiers, 100 Mo par fichier).
-- Images : PNG, JPG, WebP, SVG, AVIF, GIF et BMP en entrée selon le navigateur ; PNG, JPG, WebP et SVG en sortie. Les images animées sont aplaties. Le SVG exporté contient un bitmap intégré, sans vectorisation.
-- Vidéos : MP4, WebM, MOV en sortie avec FFmpeg WebAssembly, selon les codecs du fichier source.
-- Audio : MP3, WAV, AAC et OGG en sortie.
-- Documents : PDF, DOCX, TXT, HTML, Markdown en entrée ; PDF, DOCX, TXT, HTML en sortie. Extraction et reconstruction du texte : pas de conservation de mise en page, d’images ni d’OCR. L’ancien format DOC n’est pas pris en charge. PDF exporté avec la police Helvetica (alphabet latin).
+- Images : PNG, JPG, WebP, SVG, AVIF (selon le navigateur), GIF, BMP, TIFF/TIF et ICO en entrée ; PNG, JPG, WebP, SVG, GIF, BMP, TIFF, ICO et PDF en sortie. Les images animées sont aplaties. Les ICO sont ajustés à 256 × 256 px en conservant les proportions. Le SVG contient un bitmap intégré, sans vectorisation. Un export image vers PDF conserve son aspect visuel sur une page A4.
+- Vidéos : MP4, WebM, MOV, MKV, AVI, M4V, MPEG, TS et OGV en sortie. Entrées : ces formats ainsi que MPG, MTS, M2TS, WMV et FLV, selon les codecs présents.
+- Audio : MP3, WAV, AAC, OGG, M4A, FLAC, OPUS, AIFF/AIF et WMA en entrée ; mêmes formats en sortie (extension AIFF).
+- Documents : PDF, DOCX, TXT, HTML et Markdown en entrée ; PDF, DOCX, TXT, HTML, Markdown (.md) et RTF en sortie. Extraction et reconstruction du texte : pas de conservation de mise en page, d’images ni d’OCR. Le Markdown exporté contient le texte brut, sans reconstruction de structure. DOC et RTF en entrée ne sont pas pris en charge. PDF texte exporté avec la police Helvetica (alphabet latin).
 - Téléchargement individuel et archive ZIP avec noms uniques.
-- Traitement séquentiel des fichiers pour maîtriser la mémoire. Délai maximum de cinq minutes par conversion multimédia.
+- Traitement séquentiel des fichiers pour maîtriser la mémoire. Délai maximum de cinq minutes par opération FFmpeg. Le moteur est également chargé pour les exports GIF, BMP, TIFF, ICO et la lecture TIFF/ICO.
 
 ## Développement
 
