@@ -11,4 +11,4 @@ Autres dépendances chargées à la demande :
 - jsPDF (MIT) : https://github.com/parallax/jsPDF
 - docx (MIT) : https://github.com/dolanmiu/docx
 - fflate (MIT) : https://github.com/101arrowz/fflate
-- DM Sans et Manrope (SIL Open Font License) via Google Fonts.
+- DM Sans et Space Mono (SIL Open Font License) via Google Fonts.

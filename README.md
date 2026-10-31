@@ -32,6 +32,10 @@ Seuls `index.html`, `styles.css`, `app.js`, `assets/` et `vendor/` sont publiés
 
 ## Confidentialité et dépendances
 
-Les fichiers sont traités en mémoire dans le navigateur. Aucune télémétrie et aucun stockage persistant. Les moteurs sont chargés à la demande depuis jsDelivr ou esm.sh ; Google Fonts fournit les polices, avec repli sur les polices système. Ces services reçoivent les requêtes réseau habituelles, jamais les fichiers à convertir. Une connexion est requise au premier chargement des moteurs. FFmpeg nécessite environ 32 Mo de téléchargement et peut consommer beaucoup de mémoire sur mobile.
+Les fichiers sont traités en mémoire dans le navigateur. Aucune télémétrie et aucun stockage persistant. Les moteurs sont chargés à la demande depuis jsDelivr ou esm.sh ; Google Fonts fournit DM Sans et Space Mono, les polices de la suite NEXO, avec repli sur les polices système. Ces services reçoivent les requêtes réseau habituelles, jamais les fichiers à convertir. Une connexion est requise au premier chargement des moteurs. FFmpeg nécessite environ 32 Mo de téléchargement et peut consommer beaucoup de mémoire sur mobile.
 
 Bibliothèques : FFmpeg WASM 0.12.15 / core 0.12.10, Mammoth 1.9.1, PDF.js 3.11.174, jsPDF 2.5.2, docx 9.5.1 et fflate 0.8.2. Voir `vendor/README.md` pour les licences. Le cœur FFmpeg est chargé depuis un CDN et n’est pas distribué dans ce dépôt.
+
+## Charte graphique NEXO
+
+Identité reprise du portail NEXO (`nexo-hub/dist/styles.css`) : fond `#101116`, surfaces `#16171d`, texte `#f1f0ee`, violet `#c28cff`, cyan `#83d9ff`, titres en dégradé et trame de points violet/cyan/bleu. Typographies DM Sans et Space Mono. Liens vers le portail NEXO dans la navigation et le pied de page.
