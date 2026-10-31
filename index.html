@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Converxo : convertissez vos images, vidéos, fichiers audio et documents directement dans votre navigateur. Gratuit, sans inscription et sans envoi de vos fichiers.">
+<meta name="theme-color" content="#143f35"><title>Converxo — Tous vos formats, une seule solution</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script type="module" src="app.js"></script>
+</head>
+<body>
+<aside class="sidebar">
+<a class="brand" href="./" aria-label="Converxo, accueil"><span class="brand-mark">c<span>↗</span></span>converxo<span class="brand-dot">.</span></a>
+<p class="nav-label">VOTRE BOÎTE À OUTILS</p>
+<nav aria-label="Catégories de conversion">
+<button class="nav-item active" data-category="all"><i data-icon="grid"></i>Tous les fichiers<span class="nav-count">4</span></button>
+<button class="nav-item" data-category="image"><i data-icon="image"></i>Images</button>
+<button class="nav-item" data-category="video"><i data-icon="video"></i>Vidéos</button>
+<button class="nav-item" data-category="audio"><i data-icon="music"></i>Audio</button>
+<button class="nav-item" data-category="document"><i data-icon="file"></i>Documents</button>
+</nav>
+<div class="sidebar-bottom"><div class="privacy-mini"><span class="privacy-icon"><i data-icon="shield"></i></span><strong>Vos fichiers restent<br>vos fichiers.</strong><p>Ils sont convertis sur votre appareil. Jamais sur un serveur.</p><a href="#confidentialite">Notre engagement <span>↗</span></a></div><span class="sidebar-footer">Un peu moins de complications.<br>Un peu plus de possibilités.</span></div>
+</aside>
+<div class="workspace">
+<header class="topbar"><span>Le bon format. Tout simplement.</span><div><span class="local-badge"><span></span>100 % dans votre navigateur</span><button class="help-link" id="help-open"><i data-icon="help"></i>Aide</button></div></header>
+<main>
+<section class="intro"><div class="eyebrow"><span></span>LES FICHIERS CHANGENT. LA SIMPLICITÉ RESTE.</div><h1>Tous vos formats.<br><span>Une seule solution.</span><span class="heading-star" aria-hidden="true">✳</span></h1><p>Une image, une vidéo, un document ? Passez au bon format<br class="desktop-break"> en quelques clics. Sans installation. Sans prise de tête.</p></section>
+<section class="converter" aria-label="Convertisseur de fichiers">
+<div class="converter-tabs" role="group" aria-label="Filtrer les fichiers"><button class="tab active" data-category="all">Tous les fichiers</button><button class="tab" data-category="image"><i data-icon="image"></i>Images</button><button class="tab" data-category="video"><i data-icon="video"></i>Vidéos</button><button class="tab" data-category="audio"><i data-icon="music"></i>Audio</button><button class="tab" data-category="document"><i data-icon="file"></i>Documents</button></div>
+<div class="dropzone" id="dropzone"><div class="file-illustration" aria-hidden="true"><span class="mini-file file-back">JPG</span><span class="mini-file file-front"><i data-icon="upload"></i></span><span class="mini-file file-right">MP4</span><span class="spark spark-one">+</span><span class="spark spark-two">✧</span></div><h2>Déposez vos fichiers ici</h2><p>ou choisissez-les depuis votre appareil</p><button class="primary" id="choose"><i data-icon="plus"></i>Choisir des fichiers</button><input id="file-input" type="file" multiple hidden><span class="drop-hint" id="drop-hint">Images, vidéos, audio et documents · 100 Mo par fichier</span></div>
+<div class="queue" id="queue" hidden><div class="queue-heading"><h2>Vos fichiers <span id="file-count"></span></h2><button class="text-button" id="clear">Tout effacer</button></div><div id="file-list"></div><div class="queue-actions"><p id="queue-summary" role="status" aria-live="polite"></p><div><button class="secondary" id="download-all" hidden><i data-icon="download"></i>Tout télécharger (.zip)</button><button class="primary" id="convert"><i data-icon="refresh"></i>Tout convertir</button></div></div></div>
+<div class="converter-footer"><span><i data-icon="lock"></i>Vos fichiers ne quittent pas votre appareil</span><span><i data-icon="layers"></i>Conversion par lots</span></div>
+</section>
+<div class="benefits"><span><i data-icon="check"></i>Gratuit, sans inscription</span><span><i data-icon="check"></i>Aucun logiciel à installer</span><span><i data-icon="check"></i>Vos fichiers restent privés</span></div>
+<section class="formats-section" id="formats"><div class="section-title"><h2>Un format pour chaque idée.</h2><span>Le bon outil, juste ce qu’il faut.</span></div><div class="format-grid">
+<button class="format-card" data-category="image"><span class="category-icon peach"><i data-icon="image"></i></span><span class="card-arrow">↗</span><h3>Images</h3><p>Un nouveau format, la même inspiration.</p><div class="format-tags"><span>PNG</span><span>JPG</span><span>WebP</span><span>SVG</span></div></button>
+<button class="format-card" data-category="video"><span class="category-icon lavender"><i data-icon="video"></i></span><span class="card-arrow">↗</span><h3>Vidéos</h3><p>Vos moments, sur tous les écrans.</p><div class="format-tags"><span>MP4</span><span>WebM</span><span>MOV</span></div></button>
+<button class="format-card" data-category="audio"><span class="category-icon yellow"><i data-icon="music"></i></span><span class="card-arrow">↗</span><h3>Audio</h3><p>Donnez le bon format à votre son.</p><div class="format-tags"><span>MP3</span><span>WAV</span><span>AAC</span><span>OGG</span></div></button>
+<button class="format-card" data-category="document"><span class="category-icon mint"><i data-icon="file"></i></span><span class="card-arrow">↗</span><h3>Documents</h3><p>Les bonnes idées se partagent.</p><div class="format-tags"><span>PDF</span><span>DOCX</span><span>TXT</span><span>HTML</span></div></button>
+</div></section>
+<section class="privacy-banner" id="confidentialite"><span class="banner-icon"><i data-icon="shield"></i></span><div><h2>Votre vie privée n’est pas une option.</h2><p>La conversion se fait dans votre navigateur. Vos fichiers ne sont ni envoyés,<br class="desktop-break"> ni stockés sur nos serveurs. Vous gardez la main, du début à la fin.</p></div><span class="privacy-seal">LOCAL<br><strong>100 %</strong><br>PRIVÉ</span></section>
+<footer><a class="footer-brand" href="./">converxo.</a><span>Moins de limites. Plus de possibilités.</span><button class="text-button" id="about-open">Formats et limites <span>↗</span></button></footer>
+</main></div>
+<dialog id="help-dialog"><div class="dialog-head"><h2>Simple, du début à la fin.</h2><button class="icon-button" id="help-close" aria-label="Fermer l’aide">×</button></div><ol><li><strong>Ajoutez vos fichiers.</strong> Glissez-les dans la zone ou choisissez-les sur votre appareil.</li><li><strong>Choisissez un format</strong> pour chaque fichier, puis cliquez sur « Tout convertir ».</li><li><strong>Téléchargez le résultat</strong> individuellement ou dans une archive ZIP.</li></ol><h3>Formats et limites</h3><p><strong>Images :</strong> PNG, JPG, WebP, AVIF et SVG en entrée selon votre navigateur ; PNG, JPG, WebP et SVG en sortie. Le SVG exporté contient une image intégrée : ce n’est pas une vectorisation.</p><p><strong>Vidéo et audio :</strong> MP4, MOV, WebM, MP3, WAV, AAC et OGG. Le moteur FFmpeg (environ 32 Mo) est téléchargé à la première conversion. Les gros fichiers peuvent être lents sur mobile.</p><p><strong>Documents :</strong> PDF, DOCX, TXT et HTML en entrée et en sortie. Conversion du contenu textuel uniquement : la mise en page, les images et les polices d’origine ne sont pas conservées. Les PDF scannés nécessitent une reconnaissance de texte, non disponible ici. L’ancien format .doc n’est pas pris en charge.</p><p>100 Mo maximum par fichier, 20 fichiers par lot. Les conversions sont traitées successivement pour limiter la mémoire utilisée. Une connexion est nécessaire au chargement des moteurs externes ; aucun fichier ne leur est envoyé.</p></dialog>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+</body></html>
