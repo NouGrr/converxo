@@ -2,7 +2,7 @@
 
 **Tous vos formats, une seule solution.**
 
-🌐 **[Ouvrir Converxo sur GitHub Pages](https://nougrr.github.io/converxo/)**
+**[Converxo - Tous vos formats, une seule solution](https://nougrr.github.io/converxo/)**
 
 Convertisseur de fichiers en français, statique et compatible avec GitHub Pages. Aucun fichier utilisateur n’est envoyé à un serveur. Aucun compte, clé API ou backend requis.
 
