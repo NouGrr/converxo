@@ -38,4 +38,6 @@ Bibliothèques : FFmpeg WASM 0.12.15 / core 0.12.10, Mammoth 1.9.1, PDF.js 3.11.
 
 ## Charte graphique NEXO
 
-Identité reprise du portail NEXO (`nexo-hub/dist/styles.css`) : fond `#101116`, surfaces `#16171d`, texte `#f1f0ee`, violet `#c28cff`, cyan `#83d9ff`, titres en dégradé et trame de points violet/cyan/bleu. Typographies DM Sans et Space Mono. Liens vers le portail NEXO dans la navigation et le pied de page.
+Identité de la suite NEXO, harmonisée avec Pixo, Doxo et Vixo : fond `#10131d`, panneaux `#1b2030`, panneaux secondaires `#293047`, bordures `#3b4560`, texte `#f5f7ff` et texte secondaire `#a9b1c7`. Typographies DM Sans et Space Mono, dégradés et trame de points du portail NEXO.
+
+Couleurs des catégories : images/Pixo `#c28cff`, documents/Doxo `#83d9ff`, vidéos/Vixo `#79a8ff`, audio `#61dce5`. Les couleurs associées aux applications sur le portail sont reprises sur les cartes, onglets, icônes et fichiers ; la zone de dépôt et le bouton de conversion suivent la catégorie sélectionnée. Liens vers le portail NEXO dans la navigation et le pied de page.
